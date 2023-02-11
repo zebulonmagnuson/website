@@ -1,0 +1,43 @@
+<!-- Banner -->
+{{ if .Site.Data.homepage.banner.enable }}
+{{ range last 1 ((where .Site.RegularPages "Params.item_id" .Site.Data.homepage.banner.purchase_item_id))}}
+{{ $book := . }}
+{{ with .Site.Data.homepage.banner }}
+<section class="banner-main py-7" id="banner">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-7 col-md-8 col-md-9 col-md-10">
+        <div class="main-banner">
+          <span class="text-color font-weight-bold">{{ .author | markdownify }}</span>
+          <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
+          {{ if $book.Params.for_sale }}
+          <div class="mb-4">
+            <h4>Price : <span class="text-color">{{ $book.Params.price }} CHF</span></h4>
+          </div>
+          {{ end }}
+          <p class="mb-4">{{ .content | markdownify }}</p>
+          {{ if $book.Params.for_sale }}
+          <h6>Purchase: <em>{{$book.Params.title}}</em></h6>
+          <a href="{{ .amazon_url | safeURL }}" target="_blank" class="btn btn-main-2">{{ .amazon_button_label }}</a>
+          <button class="snipcart-add-item btn btn-main mt-1" data-item-id="{{ $book.Params.item_id }}"
+            data-item-name="{{ $book.Title | markdownify }}" data-item-image="{{ $book.Params.image | absURL }}"
+            data-item-price="{{ $book.Params.price }}" data-item-url="{{  $.Site.Params.snipcartUrl }}{{ .Permalink }}"
+            data-item-weight="{{ $book.Params.weight }}">
+            {{ .buy_direct_button }} <i class="ti-angle-right ml-3"></i>
+          </button>
+          {{ end }}
+        </div>
+      </div>
+      {{ if .image }}
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="banner-img pt-5">
+          <img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100">
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}

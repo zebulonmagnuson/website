@@ -1,0 +1,109 @@
+baseURL = "/"
+languageCode = "en-us"
+paginate = 6
+relativeurls = true
+summaryLength = "10"
+theme = "influencer-hugo"
+title = "Magnuson EdStudio"
+[[menu.main]]
+URL = "skill"
+name = "Skills"
+weight = 70
+[[menu.main]]
+URL = "blogedu"
+name = "Blogs"
+weight = 60
+[[menu.main]]
+URL = "author"
+name = "Bio"
+weight = 50
+# [[menu.main]]
+# URL = "podcast"
+# name = "Podcasts"
+# weight = 40
+[[menu.main]]
+URL = "faerie"
+name = "Community"
+weight = 40
+[[menu.main]]
+URL = "visits"
+name = "Visits"
+weight = 30
+[[menu.main]]
+URL = "books"
+name = "Books"
+weight = 20
+[[menu.main]]
+URL = "preview"
+name = "Preview"
+weight = 15
+[[menu.main]]
+URL = ""
+name = "Home"
+weight = 10
+[params]
+author = "Paul Magnuson"
+copyright = "Copyright &copy; 2021 to Paul Magnuson - All Rights Reserved"
+description = "Magnuson EdStudio - is about whimsical, thinking books for children and progressive ideas for teachers. Increase child and student personal agency through innovative learning and teaching."
+googleAnalitycsID = ""
+home = "Home"
+logo = "/images/Magnuson_EdStudio_Logo_Cardinal.jpg"
+snipcartUrl = "https://magnusonedstudio.ch"
+[params.cookies]
+enable = false
+expire_days = 2
+[params.footer]
+logo_footer = "static/images/Magnuson_EdStudio_Logo_Rectangle.jpg"
+content = "Affiliate websites:"
+sitename1 = "EDgility"
+sitename2 = "Peak Challenges"
+sitename3 = "LAS Educational Research"
+sitename4 = "Agile Research Consortium for Schools"
+url1 = "https://edgility.school"
+url2 = "https://peakchallenges.ch"
+url3 = "https://www.las.ch/learning/educational-research"
+url4 = "https://arcforschools.org"
+[params.meta_tags]
+meta_description = "Magnuson EdStudio - is about thinking books for children and progressive ideas for teachers. Increase child and student personal agency through innovative learning and teaching."
+meta_og_description = "Magnuson EdStudio - is about thinking books for children and progressive ideas for teachers. Increase child and student personal agency through innovative learning and teaching."
+meta_og_image = "https://www.magnusonedstudio.ch/images/Magnuson_EdStudio_Landing_Page.png"
+meta_og_locale = "en-us"
+meta_og_site_name = "Magnuson EdStudio"
+meta_og_title = "Magnuson EdStudio"
+meta_og_type = "website"
+meta_og_url = "https://www.magnusonedstudio.ch/"
+meta_twitter_card = "summary_large_image"
+meta_twitter_creator = "@zebmagnuson"
+meta_twitter_image = "https://www.magnusonedstudio.ch/images/Magnuson_EdStudio_Landing_Page.png"
+meta_twitter_site = "@zebmagnuson"
+[params.navButton]
+enable = true
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+URL = "plugins/magnific-popup/magnific-popup.css"
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+URL = "plugins/magnific-popup/magnific-popup.min.js"
+[[params.plugins.js]]
+URL = "plugins/magnific-popup/magnific-popup.min.js"
+[params.preloader]
+enable = true
+preloader = ""
+[[params.share]]
+icon = "ti-twitter-alt"
+link = "https://twitter.com/zebmagnuson"
+title = "twitter"
+[[params.share]]
+icon = "ti-linkedin"
+link = "https://www.linkedin.com/in/zebmagnuson/"
+title = "linkedin"

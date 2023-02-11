@@ -1,0 +1,18 @@
+<div class="blog-item card mb-4 border-0">
+  <div class="book-item mb-4 mb-lg-0">
+    <img src="{{ .Params.Image | relURL }}" alt="{{ .Title | markdownify }}" class="img-fluid w-100">
+    <a href="{{ .Permalink }}" class="hover-item">
+      <i class="ti-link"></i>
+    </a>
+  </div>
+  <div class="blog-item-content p-4">
+    <h4 class="mt-2 mb-3"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+    <div class="blog-meta">
+      <span>{{ .Params.Location | title }}</span>
+    </div>
+    <div class="">
+      <h5><span class="text-color">{{ .Params.Event_date | time.Format "02 Jan 2006" }}</span></h5>
+    </div>
+    <p><small>{{ .Params.Caption | markdownify }}</small></p>
+  </div>
+</div>

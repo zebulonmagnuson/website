@@ -1,0 +1,43 @@
+<div class="row justify-content-between"
+    style="border-style: solid; border-color: rgb(230, 232, 235); border-width: 4px 6px;">
+  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6">
+
+    <div class="p-2">
+      <h4><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+
+      <div class="blog-meta mb-2">
+        <span>{{ .Params.Author | title }}</span>
+      </div>
+      {{ if .Params.for_sale }}
+        <div class="mb-4">
+          <h4>Price : <span class="text-color">{{ .Params.price }} CHF</span></h4>
+        </div>
+        {{ end }}
+        <p><small>{{ .Params.Caption | markdownify }}</small></p>
+        {{ if .Params.for_sale }}
+        <button class="snipcart-add-item btn btn-main mt-2" data-item-id="{{ .Params.item_id }}" data-item-name="{{ .Title | markdownify }}"
+          data-item-image="{{ .Params.Image | absURL }}" data-item-price="{{ .Params.price }}" data-item-url="{{  $.Site.Params.snipcartUrl }}" 
+          data-item-weight="{{ .Params.weight }}">
+          Purchase now <i class="ti-angle-right ml-3"></i>
+        </button>
+      {{ end }}
+      {{ if .Params.preview_link }}
+        <a href="{{ .Params.preview_link | safeURL }}" target="_blank" class="mt-2 btn btn-main-2">Preview</a>
+      {{ end }}
+    </div>
+    <!-- <h4 class="mt-2 mb-3"><a href="{{ .Permalink | relURL }}">{{ .Params.Title | markdownify }}</a></h4>
+    <p>Author: {{ .Params.Author | title }}</p>
+    <p><small>{{ .Params.Caption | markdownify }}</small></p> -->
+  </div>
+  {{ if .Params.image }}
+  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 pt-3 pb-2">
+    <div class="book-item mb-4 mb-lg-0">
+      <img src="{{ .Params.Image | relURL }}" alt="{{ .Title | markdownify }}" class="img-fluid w-100">
+      <a href="{{ .Permalink }}" class="hover-item">
+        <i class="ti-link"></i>
+      </a>
+    </div>
+  </div>
+  {{ end }}
+</div>
+<!-- <div class="row"><br><br></div> -->

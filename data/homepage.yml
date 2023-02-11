@@ -1,0 +1,171 @@
+---
+banner:
+  enable: true
+  title: Paul Magnuson
+  author: Educator and Author
+  subTitle: Innovative teaching and learning
+  purchase_item_id: scabfaerie
+  image: "/images/Scab_Faerie.png"
+  content:
+    <h4>Innovative teaching and learning</h4>
+
+    Virtual school visits with students and teachers, Student and teacher agency, teacher-directed professional development, agile in education, blogs, podcasts in intermediate English, and children's books.
+    <br><br>
+    I like to reflect with others about educational possibilities that are not those we encounter every day. I like to support student and teacher agency so that we might actually walk the talk of lifelong learning. And I like to read my own creative work to children, while encouraging them to draw, to write, and to imagine.
+    </p>
+
+    <h4>Projects on the front burner</h4>
+    <p>
+    <ul>
+      <li>Podcasts in intermediate English about innovative teaching and learning (with my colleagues in Taiwan).</li>
+      <li>The February 2023 release of my fourth children's book, Is This Right? If you've ever been a parent - or a child - you'll be able to relate to Emmalou.</li>
+      <li>DIY Language Curriculum - where students construct their own language to explore how cool language really is. And it really is cool.</li>
+    </ul>
+    Looking for someone who will tailor a unique experience in progressive education for you and your colleagues?
+    <br><br>
+    <b>Find me</b> on <a href="https://www.linkedin.com/in/zebmagnuson/">LinkedIn (zebmagnuson)</a> and
+    <a href="https://blog.tieonline.com/category/paul-magnuson/">The International Educator</a>, or contact me at <a href="mailto:pmagnuson@las.ch">pmagnuson@las.ch</a>.  Fingers crossed.
+    </p>
+  buy_direct_button: Direct from Author
+  amazon_button_label: Amazon (US Only)
+  amazon_url: https://www.amazon.com/Scab-Faerie-Paul-Magnuson/dp/1643438093/ref=sr_1_1?dchild=1&keywords=the+scab+faerie&qid=1626372946&s=books&sr=1-1
+preview:
+  enable: true
+  pagePreview:
+  - image: "/images/Scab_Faerie.png"
+  - image: "/images/bleary-eye-faerie.jpg"
+  - image: "/images/ScabFaerieCover.jpg"
+  title: Book Preview
+  content: |-
+    You probably don’t know what I’m about to tell you.
+
+    When you lose a tooth, the Tooth Faerie comes to your room in the middle of the night, reaches under your pillow, and takes it. In exchange, she leaves a coin in its place, for you!
+
+    You knew that already? I did too. Everyone knows about the Tooth Faerie. Here’s what I didn’t know, though, and I bet you don’t know this either. Lean in close. I’ll whisper it to you . . .
+
+    _The Tooth Faerie isn’t the only faerie who visits in the night._
+  inside:
+  preview_button:
+    enable: true
+    label: Preview - Selected Faeries
+    link: "/images/selected_faeries_preview.pdf"
+booksvertical:
+  enable: true
+  title: Whimsical Children's Books
+  subtitle:
+visits:
+  enable: true
+  title: School visists and readings
+  subtitle:
+faerie:
+  enable: true
+  title: Community Faeries
+  subtitle: |-
+    Join our community of whimsical fantasy and creativity.
+
+    Send us your artwork of faerie sightings.
+bookshorizontal:
+  enable: false
+  title: Horizontal Books
+  subtitle: Whimiscle children's books
+podcast:
+  enable: false
+  title: Podcasts
+  subtitle: "Podcasts in intermediate English about innovative teaching and learning\n\nI
+    am committed to creating unique, scaffolded learning for non-native English speaking
+    educators. In 2023 we will launch a series of short podcasts in intermediate English
+    with tie-ins to blogs and additional podcasts (produced for native English speakers).
+    Listeners can engage with current topics in innovative teaching and learning and
+    continue their English practice with additional materials on the same topic. From
+    easy podcast to short blog to longer podcast. This project is a collaboration
+    of colleagues working in  Switzerland and Taiwan. \n\nSeason 1 Preview\n\nEpisode
+    1. Student and teacher agency\nEpisode 2. Teachers leading their own PD\nEpisode
+    3. Pulling agile into education\nEpisode 4. Language policies\nEpisode 5. Learning
+    spaces\nEpisode 6. Uplift\n"
+blog:
+  enable: false
+  title: Magnuson EdStudio Blog
+  subtitle: Story behind the story.
+author:
+  enable: true
+  image: images/duo-and-paul.jpg
+  name: Paul Magnuson
+  designation: Educator and Author
+  content: "I attribute much of my innovation in teaching and learning to 20 years
+    of summer camp experience. Never underestimate the power of learning when unfettered
+    from “regular” school! Years of experience in school improvement with US federal
+    education programs, coupled with classroom teaching from elementary through graduate
+    school (e.g. world languages, ESL, music, teaching licensure, applied linguistics,
+    and leadership) bring both perspective and depth.\n\nSince 2008 I’ve held several
+    roles at Leysin American School, including middle school and summer school leadership,
+    accreditation systems, curriculum development, and professional development through
+    action research. Since 2015 I've also taught in administration, international
+    education, and teacher licensure, first at Endicott College and since 2020 at
+    Moreland University. \n\nI hold a PhD in Curriculum & Instruction from the University
+    of Minnesota, a ScrumMaster certification in Agility, and a ten year hobby of
+    language learning with Duolingo, whom I met once in person. Well, more like in
+    owl, if you see what I mean."
+  signature: ''
+blogedu:
+  enable: true
+  title: Educational Blogs
+  subtitle: Student agency, pulling agile into education, innovative teaching and
+    learning
+  blogedu:
+  - name: The International Educator
+    image: images/tieonline_website.png
+    author: ''
+    url: http://blog.tieonline.com/category/paul-magnuson/
+    content: ''
+  - name: Peak Challenges
+    image: images/peakchallenges_site.png
+    author: ''
+    url: https://peakchallenges.ch/blog/
+    content: ''
+  - name: ECIS Insightful
+    image: images/ecis_website.png
+    author: ''
+    url: https://www.ecis.org/insightful
+    content: ''
+skill:
+  enable: true
+  title: Workshops and Consulting
+  subtitle: 'In addition to whimsical stories for children, I like to share a bit
+    of whimsy with innovative teachers working with children. '
+  skillItem:
+  - title: Innovative Teaching and Learning
+    icon: ti-shine
+    content: I have created and led many virtual and face-to-face workshops about
+      innovative teaching and learning. I particularly like hands on and self-regulated
+      work, supported by simulations and role plays, which help students connect their
+      learning to their own emotions and to the world around them.
+  - title: In-house Professional Development
+    icon: ti-infinite
+    content: 'Over the past 15 years I’ve developed a research center at my own school.
+      There are several advantages to supporting pd from within: it is cheaper, it
+      is ongoing, it is classroom situated, and it is relevant. I can help you build
+      on your current pd efforts to further your culture of learning at school.'
+  - title: EDgility - Pulling agile into education
+    icon: ti-id-badge
+    content: 'My colleague Bill Tihen and I, based on work with teachers around the
+      world, developed a set of practices to nudge teaching and learning toward greater
+      collaboration, joy, and discovery. I support both individuals and groups of
+      teachers interested in pulling elements of agility into their own teaching repertoire. '
+contact:
+  enable: true
+  title: Contact Me
+  subtitle: Whether you have questions or you would just like to say hello, contact
+    me.
+  contactItem:
+  - title: Phone
+    icon: ti-headphone-alt
+    list:
+    - listItem: "+41 79 376 47 65"
+  - title: Email
+    icon: ti-email
+    list:
+    - listItem: paul@magnusonedstudio.ch
+  - title: Location
+    icon: ti-location-pin
+    list:
+    - listItem: 1854 Leysin, Suisse
