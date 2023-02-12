@@ -6,7 +6,7 @@ author: Paul Magnuson
 is_showcase: true
 priority: 1
 for_sale: true
-price: "14"
+price: "15"
 item_id: isthisright
 image: "/images/paul-is-this-right.png"
 purchaseLink: https://itascabooks.com/products/is-this-right
