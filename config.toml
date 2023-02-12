@@ -17,20 +17,9 @@ name = "Services"
 weight = 20
 
 [[menu.main]]
-URL = "visits"
-name = "Visits"
-weight = 30
-
-[[menu.main]]
 URL = "blogedu"
 name = "Blogs"
-weight = 40
-
-
-[[menu.main]]
-URL = "podcast"
-name = "Podcasts"
-weight = 45
+weight = 30
 
 # [[menu.main]]
 # URL = "preview"
@@ -48,9 +37,19 @@ name = "Community"
 weight = 55
 
 [[menu.main]]
+URL = "visits"
+name = "Visits"
+weight = 60
+
+[[menu.main]]
+URL = "podcast"
+name = "Podcasts"
+weight = 70
+
+[[menu.main]]
 URL = "author"
 name = "About"
-weight = 60
+weight = 80
 
 
 [params]
