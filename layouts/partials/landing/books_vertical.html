@@ -1,0 +1,23 @@
+{{ if .Site.Data.homepage.booksvertical.enable }}
+<section class="section section-bottom bg-grey" id="books">
+  <!-- <div class="container col-9 bg-grey" style="border-radius: 25px;"> -->
+  <div class="container col-xl-8 col-lg-9 col-md-10 col-sm-10 col-xs-10">
+    {{ with .Site.Data.homepage.booksvertical }}
+    <div class="row justify-content-between">
+      <div class="col-12 text-center">
+        <div class="main-banner">
+          <h2 class="text-lg">{{ .title | markdownify }}</h2>
+          <p class="mb-4">{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{ range ((where .Site.RegularPages "Type" "book").ByParam "priority") }}
+    {{ .Render "bookvertical" }}
+    {{ end }}
+    <div class="text-center mt-5">
+      <a href="/book" class="btn btn-main">All books</a>
+    </div>
+  </div>
+</section>
+{{ end }}

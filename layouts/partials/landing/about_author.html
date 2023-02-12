@@ -1,0 +1,28 @@
+<!-- About Author -->
+{{ if .Site.Data.homepage.author.enable }}
+{{ with .Site.Data.homepage.author }}
+<section class="about section" id="author">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <div class="about-img">
+          <img src="{{ .image | relURL }}" alt="{{ .name }}" class="img-fluid w-100">
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="author-info pl-4 mt-5 mt-lg-0">
+          <h2 class="text-lg">{{ .name }}</h2>
+          <p class="mb-4 lead">{{ .designation }}</p>
+          {{ .content | markdownify }}
+
+          {{ if .signature }}
+          <img src="{{ .signature | relURL }}" alt="" class="img-fluid">
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

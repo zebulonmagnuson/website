@@ -1,0 +1,48 @@
+<!-- blogedus - other educational blogs -->
+{{ if .Site.Data.homepage.blogedu.enable }}
+{{ with .Site.Data.homepage.blogedu }}
+<section class="section-top testimonial" id="blogedu">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-12">
+        <div class="section-heading text-center">
+          <h2 class="mb-3 text-lg">{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-lg-12 col-sm-12 col-md-12 testimonial-wrap">
+        {{ range .blogedu}}
+        <div class="test-item">
+          <div class="blogedu-item-content">
+            <div class="book-item mb-4 mb-lg-0">
+              <img src="{{ .image | relURL }}" alt="" class="img-fluid">
+              <a href="{{ .link | safeURL }}" class="hover-item">
+                <i class="ti-link"></i>
+              </a>
+            </div>
+            <div class="blogedu-thumb mb-4">
+              <!--
+              <a href="{{ .url | safeURL }}" class="hover-item">
+                <img src="{{ .image | relURL }}" alt="blog website image" class="img-fluid">
+              </a>
+              -->
+              <div class="blogedu-info mt-4">
+                <h4 class="mb-0 mt-2">
+                  <a href="{{ .url | safeURL }}">{{ .name }}</a>
+                </h4>
+                <p>{{ .author }}</p>
+              </div>
+            </div>
+            <p class="mb-0">{{ .content | markdownify }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

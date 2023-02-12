@@ -1,0 +1,27 @@
+<!-- magnuson studio blog -->
+{{ if .Site.Data.homepage.blog.enable }}
+<section class="section blog blog-home" id="blog">
+  <div class="container">
+    {{ with .Site.Data.homepage.blog }}
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading text-center">
+          <h2 class="text-lg mb-3">{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    <div class="row">
+      {{ range first 2 (where .Site.RegularPages "Type" "blog")}}
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        {{ .Render "blog"}}
+      </div>
+      {{ end }}
+    </div>
+    <div class="text-center mt-5">
+      <a href="/blog" class="btn btn-main">All Blogs</a>
+    </div>
+  </div>
+</section>
+{{ end }}

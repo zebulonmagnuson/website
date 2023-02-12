@@ -1,0 +1,36 @@
+<!-- Latest podcast -->
+{{ if .Site.Data.homepage.podcast.enable }}
+<section class="section-bottom" id="podcast">
+  <!-- <div class="row">
+  &nbsp;
+</div> -->
+  <div class="container">
+    {{ with .Site.Data.homepage.podcast }}
+    <div class="row">
+      &nbsp;
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading text-center">
+          <h2 class="text-lg mb-3">{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    <div class="row">
+      {{ range first 3 (where .Site.RegularPages "Type" "podcast")}}
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        {{ .Render "podcast"}}
+      </div>
+      {{ end }}
+    </div>
+    <div class="text-center mt-5">
+      <a href="/podcast" class="btn btn-main">All Podcasts</a>
+    </div>
+    <div class="row">
+      &nbsp;
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,32 @@
+{{ if .Site.Data.homepage.skill.enable }}
+{{ with .Site.Data.homepage.skill }}
+<section class="pt-4 section-bottom" id="skill">
+  <div class="container">
+    <div class="row">
+      &nbsp;
+      <br><br><br>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-8">
+        <div class="section-heading text-center">
+          <h2 class="mb-2 text-lg">{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      {{ range .skillItem }}
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="service-block mb-4 mb-lg-0">
+          <i class="{{ .icon }} text-danger"></i>
+          <h4 class="mb-3 mt-4">{{ .title | markdownify }}</h4>
+          <p class="mb-0">{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

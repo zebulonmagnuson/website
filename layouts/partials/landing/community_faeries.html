@@ -1,0 +1,70 @@
+<!-- Community Faeries -->
+{{ if .Site.Data.homepage.faerie.enable }}
+<section class="section-bottom blog-home" id="faerie">
+  <div class="container" style="border-radius: 25px;">
+    {{ with .Site.Data.homepage.faerie }}
+    <div><br></div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="section-heading text-center">
+          <h2 class="text-lg mb-3">{{ .title | markdownify }}</h2>
+          <p>
+            {{ .subtitle | markdownify }}
+            <br>
+          </p>
+
+          <!-- Netlify Faerie Form -->
+          <!-- enctype='multipart/form-data' -- allows file uploads
+            see:  https://stackoverflow.com/questions/59592898/netlify-form-submission-not-showing-file-on-the-back-end-all-other-fields-are-s
+                  https://community.netlify.com/t/how-to-send-file-uploads-using-fetch-via-netlify-forms/1498
+                  https://github.com/futuregerald/react-netlify-form-file/blob/master/public/form.html
+          -->
+          <form name="edStudioFaerie" method="POST" enctype='multipart/form-data' data-netlify="true"
+            id="edStudioFaerie">
+            <div class="form-group form-group-lg">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <input type="text" class="form-control" id="subject" name="faerieName" placeholder="Faerie's Name">
+                  <br>
+                  <textarea name="story" id="story" class="form-control" rows="5"
+                    placeholder="Faerie's Story (optional)"></textarea>
+                </div>
+                <div class="col-12 col-md-6">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your First Name">
+                  <br>
+                  <input type="email" class="form-control" id="mail" name="mail" placeholder="Your Email (optional)">
+                </div>
+              </div>
+              <div class="row"><br></div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="faerieImage" name="faerieImage"
+                      onchange="$(this).next().after().text($(this).val().split('\\').slice(-1)[0])">
+                    <label class="custom-file-label" for="faerieImage">Faerie's Picture</label>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <button type="submit" value="send" class="btn btn-primary">Send</button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    <div class="row">
+      {{ range first 3 (where .Site.RegularPages "Type" "faerie")}}
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        {{ .Render "faerie"}}
+      </div>
+      {{ end }}
+    </div>
+    <div class="text-center mt-5">
+      <a href="/faerie" class="btn btn-main">All Faeries</a>
+    </div>
+  </div>
+</section>
+{{ end }}
