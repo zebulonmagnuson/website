@@ -1,3 +1,4 @@
+{{ if .Params.is_showcase }}
 <div class="row justify-content-between"
     style="border-style: solid; border-color: rgb(230, 232, 235); border-width: 4px 6px;">
   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6">
@@ -8,19 +9,24 @@
       <div class="blog-meta mb-2">
         <span>{{ .Params.Author | title }}</span>
       </div>
-      {{ if .Params.for_sale }}
+      {{ if .Params.purchaseLink }}
         <div class="mb-4">
           <h4>Price : <span class="text-color">{{ .Params.price }} CHF</span></h4>
         </div>
-        {{ end }}
-        <p><small>{{ .Params.Caption | markdownify }}</small></p>
-        {{ if .Params.for_sale }}
+      {{ end }}
+      <p><small>{{ .Params.Caption | markdownify }}</small></p>
+      {{ with .Params.purchaseLink }}
+        <a href="{{ . | safeURL }}" target="_blank" class="mt-2 btn btn-main">Purchase now</a>
+      {{ else }}
+        <a href="mailto:pmagnuson@las.ch" class="mt-2 btn btn-main">Contact Author</a>
+      {{ end }}
+      <!-- {{ if .Params.purchaseLink }}
         <button class="snipcart-add-item btn btn-main mt-2" data-item-id="{{ .Params.item_id }}" data-item-name="{{ .Title | markdownify }}"
-          data-item-image="{{ .Params.Image | absURL }}" data-item-price="{{ .Params.price }}" data-item-url="{{  $.Site.Params.snipcartUrl }}" 
+          data-item-image="{{ .Params.Image | absURL }}" data-item-price="{{ .Params.price }}" data-item-url="{{  $.Site.Params.snipcartUrl }}"
           data-item-weight="{{ .Params.weight }}">
           Purchase now <i class="ti-angle-right ml-3"></i>
         </button>
-      {{ end }}
+      {{ end }} -->
       {{ if .Params.preview_link }}
         <a href="{{ .Params.preview_link | safeURL }}" target="_blank" class="mt-2 btn btn-main-2">Preview</a>
       {{ end }}
@@ -41,3 +47,4 @@
   {{ end }}
 </div>
 <!-- <div class="row"><br><br></div> -->
+{{ end }}

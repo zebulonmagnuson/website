@@ -14,19 +14,24 @@
                 <h4>{{ .Params.Title }}</h4>
                 <span class="text-black mr-3">Author: {{ .Params.Author }}</span>
               </div>
-              {{ if .Params.for_sale }}
+              {{ if .Params.purchaseLink }}
               <div class="mb-4">
                 <h5>Price : <span class="text-color">{{ .Params.price }} CHF</span></h5>
               </div>
               {{ end }}
               <p class="mb-4">{{  .Params.content | markdownify }}</p>
-              {{ if .Params.for_sale }}
+              {{ with .Params.purchaseLink }}
+              <a href="{{ . | safeURL }}" target="_blank" class="mt-2 btn btn-main">Purchase now</a>
+              {{ else }}
+              <a href="mailto:pmagnuson@las.ch" class="mt-2 btn btn-main">Contact Author</a>
+              {{ end }}
+              <!-- {{ if .Params.purchaseLink }}
               <button class="snipcart-add-item btn btn-main" data-item-id="{{  .Params.item_id }}"
                 data-item-name="{{  .Params.title | markdownify }}" data-item-image="{{  .Params.image | absURL }}" data-item-price="{{  .Params.price }}" data-item-url="{{  $.Site.Params.snipcartUrl }}{{ .Permalink | absURL }}"
                 data-item-weight="{{ .Params.weight }}">
                 Purchase now <i class="ti-angle-right ml-3"></i>
               </button>
-              {{ end }}
+              {{ end }} -->
               <hr>
               {{ .Content }}
               <hr>

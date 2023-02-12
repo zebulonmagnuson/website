@@ -3,10 +3,13 @@ title: The Industrious Sloth
 date: 2020-11-25T01:28:43.000+06:00
 artist: Paul Magnuson
 author: Paul Magnuson
+is_showcase: false
 for_sale: true
+priority: 4
 price: "15"
 item_id: industrioussloth
 image: "/images/cover-page-sloth.png"
+purchaseLink:
 preview_link: images/Industrious_Sloth_for_website.pdf
 description: this is meta description
 caption: Victoria is industri... (shh! don't say that word around a bunch of sloths!)  Anyway,
@@ -16,9 +19,7 @@ caption: Victoria is industri... (shh! don't say that word around a bunch of slo
   American School. She is now a senior in high school in her native country of China.
 categories: []
 tags: []
-priority: 2
 weight: 250
-is_showcase: false
 
 ---
 Victoria is industri... (shh! don't say that word around a bunch of sloths!)
