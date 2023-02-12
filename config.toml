@@ -5,42 +5,54 @@ relativeurls = true
 summaryLength = "10"
 theme = "influencer-hugo"
 title = "Magnuson EdStudio"
-[[menu.main]]
-URL = "skill"
-name = "Skills"
-weight = 70
-[[menu.main]]
-URL = "blogedu"
-name = "Blogs"
-weight = 60
-[[menu.main]]
-URL = "author"
-name = "Bio"
-weight = 50
-# [[menu.main]]
-# URL = "podcast"
-# name = "Podcasts"
-# weight = 40
-[[menu.main]]
-URL = "faerie"
-name = "Community"
-weight = 40
-[[menu.main]]
-URL = "visits"
-name = "Visits"
-weight = 30
-[[menu.main]]
-URL = "books"
-name = "Books"
-weight = 20
-[[menu.main]]
-URL = "preview"
-name = "Preview"
-weight = 15
+
 [[menu.main]]
 URL = ""
 name = "Home"
 weight = 10
+
+[[menu.main]]
+URL = "skill"
+name = "Services"
+weight = 20
+
+[[menu.main]]
+URL = "visits"
+name = "Visits"
+weight = 30
+
+[[menu.main]]
+URL = "blogedu"
+name = "Blogs"
+weight = 40
+
+
+[[menu.main]]
+URL = "podcast"
+name = "Podcasts"
+weight = 45
+
+# [[menu.main]]
+# URL = "preview"
+# name = "Preview"
+# weight = 15
+
+[[menu.main]]
+URL = "books"
+name = "Books"
+weight = 50
+
+[[menu.main]]
+URL = "faerie"
+name = "Community"
+weight = 55
+
+[[menu.main]]
+URL = "author"
+name = "About"
+weight = 60
+
+
 [params]
 author = "Paul Magnuson"
 copyright = "Copyright &copy; 2021 to Paul Magnuson - All Rights Reserved"
